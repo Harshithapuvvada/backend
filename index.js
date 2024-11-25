@@ -6,7 +6,7 @@ const port = 5000;
 const User = require('./models/user')
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://grocery-store-b5m6.onrender.com',
     credentials: true
 }))
 
@@ -88,7 +88,7 @@ app.post('/login', async (req, res) => {
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/asdfghjkl')
+mongoose.connect('mongodb+srv://harshipuvvada:U9B78MXpjTyudG7x@cluster0.nqjyb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
         .then(() => {
             console.log('db connected')
         })
